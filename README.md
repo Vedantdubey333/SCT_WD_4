@@ -31,7 +31,5 @@ A modern, attractive To-Do application built with HTML, CSS, and JavaScript.
 - `style.css`: All styling for layout, colors, background, and responsiveness.
 - `script.js`: Handles adding, editing, completing, and deleting tasks.
 
-## Screenshot
 
-![Demo Screenshot](https://cdn-icons-png.flaticon.com/512/724/724927.png)
 
