@@ -1,0 +1,239 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  /* Modern dark gradient background */
+  background: linear-gradient(135deg, #2a2738 0%, #37365d 50%, #0a1124 100%);
+  position: relative;
+  overflow-x: hidden;
+}
+.bg-shapes {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+}
+.circle-shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.18;
+  filter: blur(2px);
+}
+.circle1 {
+  width: 320px; height: 320px;
+  background: radial-gradient(circle at 30% 30%, #ed2024 0%, transparent 70%);
+  top: -40px; left: -70px;
+}
+.circle2 {
+  width: 140px; height: 140px;
+  background: radial-gradient(circle at 60% 60%, #19c8c6 0%, transparent 80%);
+  top: 60vh; left: 3vw;
+}
+.circle3 {
+  width: 200px; height: 200px;
+  background: radial-gradient(circle at 80% 80%, #fff6d5 0%, transparent 70%);
+  top: 80vh; left: 80vw;
+}
+.line-shape {
+  position: absolute;
+  height: 6px;
+  border-radius: 6px;
+  opacity: 0.12;
+}
+.line1 {
+  width: 54vw;
+  background: linear-gradient(90deg, #ed2024 0%, #fff6d5 100%);
+  top: 12vh; left: 0;
+  transform: rotate(-5deg);
+}
+.line2 {
+  width: 28vw;
+  background: linear-gradient(90deg, #19c8c6 0%, #37365d 100%);
+  top: 75vh; left: 65vw;
+  transform: rotate(10deg);
+}
+
+/* Place the rest of your CSS below as before... */
+/* .container {
+  max-width: 900px;
+  margin: 40px auto;
+  box-shadow: 0 2px 24px rgba(0,0,0,0.4);
+  background: rgba(40, 38, 56, 0.98);
+  border-radius: 16px;
+  padding: 32px 48px;
+  position: relative;
+  z-index: 1;
+} */
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.18);
+  color: #222;
+  border-radius: 20px;
+  padding: 40px 48px;
+  box-shadow: 0 8px 32px rgba(40,38,56,0.38);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  position: relative;
+  z-index: 1;
+}
+
+header {
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.app-title {
+  display: flex;
+  align-items: center;
+  margin: 32px 0 16px 0;
+}
+
+.todo-icon {
+  width: 90px;
+  height: 90px;
+  margin-right: 16px;
+  background: #fff6d5;
+  border-radius: 18px;
+  border: 3px solid #222;
+}
+
+.app-title h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.desc p {
+  font-size: 1.3rem;
+  color: #e8e8e8;
+  line-height: 1.6;
+  margin: 0;
+}
+
+main {
+  margin-top: 24px;
+}
+
+#todo-form {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+#task-input, #task-date {
+  font-size: 1.1rem;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+#task-input {
+  flex: 2;
+  background: #383655;
+  color: #fff;
+}
+
+#task-date {
+  flex: 1;
+  background: #383655;
+  color: #fff;
+}
+
+#todo-form button {
+  background: #ed2024;
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: background .2s;
+  font-weight: 600;
+}
+
+#todo-form button:hover {
+  background: #19c8c6;
+  color: #222;
+}
+
+#todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+#todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #383655;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  padding: 18px 22px;
+  font-size: 1.16rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.11);
+  transition: background .2s;
+}
+
+#todo-list li.completed {
+  background: #19c8c6;
+  color: #222;
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.task-text {
+  font-weight: 500;
+}
+
+.task-date {
+  font-size: 0.98rem;
+  color: #fff6d5;
+  background: #222;
+  padding: 3px 9px;
+  border-radius: 6px;
+}
+
+.right button {
+  margin-left: 12px;
+  background: #ed2024;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background .2s;
+}
+
+.right .edit-btn {
+  background: #19c8c6;
+  color: #222;
+}
+
+.right button:hover {
+  background: #fff6d5;
+  color: #222;
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 16px 6px;
+  }
+  .app-title h1 {
+    font-size: 2rem;
+  }
+  .todo-icon {
+    width: 60px;
+    height: 60px;
+  }
+}
