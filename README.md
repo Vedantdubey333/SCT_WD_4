@@ -1,83 +1,37 @@
-📝 To-Do Web App
+# To-Do Web App
 
-A simple, elegant To-Do List Web Application that lets users add, edit, organize, and manage daily tasks efficiently — all with date and time scheduling support.
+A modern, attractive To-Do application built with HTML, CSS, and JavaScript.
 
-🚀 Features
+## Features
 
-➕ Add new tasks with an optional date & time.
+- **Add Tasks**: Easily add new tasks.
+- **Organize and Edit**: Edit tasks, set due date and time.
+- **Mark Complete**: Mark tasks as completed.
+- **Delete Tasks**: Remove tasks from your list.
+- **Modern Design**: Glass-morphism container, stylish inputs, and vibrant background with decorative shapes.
+- **Responsive**: Works on all screen sizes.
 
-✅ Mark tasks as completed using checkboxes.
+## Usage
 
-✏️ Edit task text and time dynamically.
+1. Clone or download this repository.
+2. Make sure you have these files:
+   - `index.html`
+   - `style.css`
+   - `script.js`
+3. Open `index.html` in your web browser.
 
-🗑️ Delete tasks easily.
+## Customization
 
-🎨 Modern glassmorphism UI with decorative shapes and gradients.
+- **Change Theme**: Edit the background or container styles in `style.css` for your preferred color scheme.
+- **Change Icon**: Replace the To-Do icon URL in `index.html` with your own image if desired.
 
-📱 Responsive design — works on mobile, tablet, and desktop.
+## File Overview
 
-🛠️ Technologies Used
+- `index.html`: Main layout and structure.
+- `style.css`: All styling for layout, colors, background, and responsiveness.
+- `script.js`: Handles adding, editing, completing, and deleting tasks.
 
-HTML5 — for structure
+## Screenshot
 
-CSS3 — for modern styling and layout
+![Demo Screenshot](https://cdn-icons-png.flaticon.com/512/724/724927.png)
 
-JavaScript (Vanilla JS) — for functionality and DOM manipulation
-
-📂 Project Structure
-To-Do-Web-App/
-│
-├── index.html        # Main HTML page
-├── style.css         # App styling and layout
-└── script.js         # Core functionality and logic
-
-⚙️ How to Run
-
-Download or clone this repository
-
-git clone https://github.com/yourusername/todo-web-app.git
-
-
-Open the folder in your code editor.
-
-Run the app locally by simply opening index.html in your browser.
-
-You can double-click index.html
-
-or run a local server using VS Code’s Live Server extension.
-
-🧩 How It Works
-
-Type your task in the input box.
-
-(Optional) Select a date and time.
-
-Click Add Task.
-
-Mark completed tasks using the checkbox.
-
-Use Edit or Delete buttons to manage tasks.
-
-🖼️ Preview
-
-Here’s an overview of the UI:
-
-Glass-style card layout
-
-Gradient background with animated shapes
-
-Clean typography and color contrast for readability
-
-💡 Future Enhancements
-
-🕓 Persistent task storage using localStorage
-
-🔔 Task reminder notifications
-
-📋 Task categorization by priority or project
-
-☁️ Sync tasks to the cloud
-
-👨‍💻 Author
-
-Developed by: VEDANT DUBEY
